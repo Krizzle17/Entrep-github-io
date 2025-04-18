@@ -408,6 +408,8 @@ h3 {
 }
 
 h4 {
+  font size:3px;
+  font-weight:2px;
   font-family: "Red Hat Display", sans-serif;
   color: white;
 }
