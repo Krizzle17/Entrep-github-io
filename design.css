@@ -1,0 +1,413 @@
+body {
+  margin: 0%;
+  background-color: #ffe8e5;
+}
+
+#owner {
+  padding-top: 20px;
+  background-color: #ff4814;
+  text-align: center;
+  margin-bottom: 35px;
+  line-height: 25px;
+}
+#founder1 {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  font-family: "Lora", serif;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+}
+#Founder {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 0.5em;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+  left: 0em;
+  text-transform: none;
+}
+
+#nina {
+  position: relative;
+  width: 14em;
+  left: 6em;
+  top: 1.3em;
+}
+
+p {
+  white-space: normal;
+  text-align: justify;
+  position: relative;
+  color: #ff4814;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: lighter;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+a {
+  color: #ff4814;
+  font-family: lora;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#about {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  top: -1em;
+  left: 8.5em;
+}
+#vertical {
+  width: 5px;
+  height: 225px;
+  background-color: #ff47146c;
+  position: relative;
+  top: 15.3em;
+  left: 1em;
+}
+#milestone {
+  width: 50%;
+  position: relative;
+  top: -7em;
+  left: 6em;
+  line-height: normal;
+}
+
+#timeline {
+  white-space: pre;
+  position: relative;
+  left: -0.5em;
+  line-height: 1em;
+}
+
+#traits {
+  color: #ff4814;
+  width: 85%;
+  position: relative;
+  left: 6em;
+  top: -5em;
+}
+
+#traits h1 {
+  font-family: "Lora", serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#traits h2 {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+#traits ul {
+  margin-left: 20px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 23px;
+  margin-top: 2px;
+  white-space: normal;
+  position: relative;
+}
+
+.quality {
+  text-indent: 25px;
+}
+
+#motivation {
+  width: 86%;
+  position: relative;
+  left: 6em;
+  top: -3.5em;
+}
+.motivations {
+  font-weight: bold;
+  margin-top: 15px;
+}
+#innermotiv {
+  position: relative;
+  left: 1.3em;
+}
+
+.push {
+  font-family: "Red Hat Display", sans-serif;
+  margin-top: 0;
+  color: #ff4814;
+  font-size: 23px;
+}
+
+#BestSeller {
+  background-color: #ff4814;
+  position: relative;
+  top: 1em;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+h3 {
+  position: relative;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 3em;
+  display: inline-block;
+  text-transform: uppercase;
+  left: 1em;
+}
+
+#products {
+  color: white;
+  background-color: #ff4814; /* Optional: add background for visibility */
+  text-align: center;
+  font-size: 0.9em;
+  font-variant: small-caps;
+  font-family: "Red Hat Display", sans-serif;
+
+  width: 7em;
+  height: 1.6em;
+  line-height: 1.6em; /* Center the text vertically */
+  border-radius: 8em;
+
+  position: absolute; /* Use absolute if placing over a section */
+  top: 1.5em;
+  right: 2em;
+
+  z-index: 10; /* Make sure it stays on top */
+}
+
+#products:hover {
+  color: black;
+  transition: 0.2s;
+  background-color: #ffe8e5;
+}
+#products:active {
+  color: #ffe8e5;
+
+  background-color: black;
+}
+#products:focus {
+  color: #ffe8e5;
+}
+
+.page2 {
+  padding-top: 9px;
+  background-color: #ff4814;
+  text-align: center;
+}
+
+.page2 h1 {
+  position: relative;
+  top: -0.5em;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: lighter;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.nav-link {
+  font-family: "Red Hat Display", sans-serif;
+  display: inline-block;
+  margin-left: 30px;
+  color: #ff4814;
+  font-size: small;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: black;
+}
+#best {
+  margin-left: 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+.product-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+  color: #e7544f;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.product-price {
+  color: #e7544f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-desc {
+  font-size: 0.9rem;
+  background-color: #ff4814;
+  border-radius: 20px;
+  border: none;
+  width: 8em;
+  height: 2em;
+  transition: background-color 0.2s, color 0.2s;
+  margin-top: 1em;
+}
+.product-desc:hover {
+  background-color: #ffe8e5;
+  color: #ff4814;
+  box-shadow: inset 2px 2px 5px 1px rgb(83, 33, 33);
+}
+.product-desc:active {
+  color: #ffe8e5;
+  background-color: #ff4814;
+  box-shadow: inset 2px 2px 5px 1px rgb(83, 33, 33);
+}
+.container {
+  margin-top: 3em;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.product-image img {
+  width: 80%;
+  max-width: 400px;
+}
+
+.product-details {
+  flex: 2 1 400px;
+  margin-top: 2em;
+}
+
+.product-details h1 {
+  color: #ff4814;
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.subtext {
+  font-style: italic;
+  color: #ff4814;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.description {
+  color: #ff4814;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  line-height: 1.6;
+  font-family: "Red Hat Display", sans-serif;
+  white-space: normal;
+}
+
+.shade-list {
+  margin-bottom: 1.5rem;
+  font-family: "Red Hat Display", sans-serif;
+  color: #ff4814;
+}
+
+.shade-list b {
+  color: #ff4814;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.shade-list ul {
+  padding-left: 1rem;
+  color: #ff4814;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.shade-list li {
+  margin-bottom: 0.3rem;
+  font-family: "Red Hat Display", sans-serif;
+  color: #ff4814;
+}
+
+.usage {
+  font-size: 1rem;
+  color: #ff4814;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.5em;
+}
+
+.usage b {
+  color: #ff4814;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+#conclusion {
+  padding: 50px;
+  position: relative;
+  top: 1em;
+  background-color: white;
+}
+
+#logo {
+  display: inline-block;
+  width: 80%;
+  max-width: 350px;
+  position: relative;
+  left: 2em;
+}
+
+#conclusion-text {
+  display: inline-block;
+  width: 28em;
+  position: relative;
+  left: 10em;
+  top: -1em;
+}
+
+#links {
+  background-color: #ff4814;
+  position: relative;
+  top: 1em;
+  padding: 15px;
+}
+#sources {
+  font-family: "Red Hat Display", sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 35px;
+}
+.source {
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: "Red Hat Display", sans-serif;
+  color: white;
+}
