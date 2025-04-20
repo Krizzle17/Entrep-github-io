@@ -647,6 +647,12 @@ h4 {
   transition: transform 0.3s ease;
 }
 
+#last{
+  font-family: "Red Hat Display", sans-serif;
+  color: #ff4814;
+  transition: transform 0.3s ease;
+}
+
 /* Add animations for section transitions */
 @keyframes fadeIn {
   from {
