@@ -1,15 +1,22 @@
 body {
   margin: 0%;
   background-color: #ffe8e5;
+  transition: background-color 0.5s ease;
+  position: relative;
 }
 
+/* Add hover effect to the owner section */
 #owner {
   padding-top: 20px;
   background-color: #ff4814;
   text-align: center;
   margin-bottom: 35px;
   line-height: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 #founder1 {
   position: relative;
   margin-top: 25px;
@@ -18,7 +25,9 @@ body {
   color: white;
   font-weight: bold;
   font-size: 70px;
+  transition: transform 0.3s ease;
 }
+
 #Founder {
   position: relative;
   margin-bottom: 20px;
@@ -29,6 +38,7 @@ body {
   font-size: 25px;
   left: 0em;
   text-transform: none;
+  transition: opacity 0.3s ease;
 }
 
 #nina {
@@ -36,6 +46,14 @@ body {
   width: 14em;
   left: 6em;
   top: 1.3em;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#nina:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 p {
@@ -47,6 +65,7 @@ p {
   font-weight: lighter;
   font-size: 1.3em;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 a {
@@ -55,22 +74,42 @@ a {
   font-size: 50px;
   font-weight: bold;
   text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
 }
+
+a:hover {
+  color: #d13504;
+  transform: translateY(-3px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 #about {
   display: inline-block;
   position: relative;
   width: 50%;
   top: -1em;
   left: 8.5em;
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 10px;
 }
+
+#about:hover {
+  transform: translateY(-5px);
+}
+
 #vertical {
   width: 5px;
   height: 225px;
+  margin-right: 50;
   background-color: #ff47146c;
   position: relative;
   top: 15.3em;
   left: 1em;
 }
+
 #milestone {
   width: 50%;
   position: relative;
@@ -84,6 +123,11 @@ a {
   position: relative;
   left: -0.5em;
   line-height: 1em;
+  transition: transform 0.3s ease;
+}
+
+#timeline:hover {
+  transform: translateX(10px);
 }
 
 #traits {
@@ -92,6 +136,9 @@ a {
   position: relative;
   left: 6em;
   top: -5em;
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 #traits h1 {
@@ -105,6 +152,13 @@ a {
   margin: 0;
   font-size: 25px;
   margin-top: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+#traits h2:hover {
+  transform: translateX(10px);
+  color: #d13504;
 }
 
 #traits ul {
@@ -114,6 +168,12 @@ a {
   margin-top: 2px;
   white-space: normal;
   position: relative;
+  transition: opacity 0.3s ease;
+  opacity: 0.9;
+}
+
+#traits ul:hover {
+  opacity: 1;
 }
 
 .quality {
@@ -125,14 +185,27 @@ a {
   position: relative;
   left: 6em;
   top: -3.5em;
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 10px;
 }
-.motivations {
-  font-weight: bold;
-  margin-top: 15px;
-}
+
 #innermotiv {
   position: relative;
   left: 1.3em;
+  transition: transform 0.3s ease;
+}
+
+.motivations {
+  font-weight: bold;
+  margin-top: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.motivations:hover {
+  color: #d13504;
+  transform: translateX(10px);
 }
 
 .push {
@@ -140,6 +213,11 @@ a {
   margin-top: 0;
   color: #ff4814;
   font-size: 23px;
+  transition: opacity 0.3s ease;
+}
+
+.push:hover {
+  opacity: 1;
 }
 
 #BestSeller {
@@ -149,6 +227,10 @@ a {
   width: 100%;
   height: 100%;
   margin: 0;
+  transition: background-color 0.3s ease;
+}
+#BestSeller:hover {
+  background-color: #e63c0c;
 }
 h3 {
   position: relative;
@@ -158,13 +240,19 @@ h3 {
   display: inline-block;
   text-transform: uppercase;
   left: 1em;
+  transition: transform 0.3s ease;
+}
+#BestSeller:hover h3 {
+  transform: translateY(-10px);
+  font-size: 3em;
+  text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.452);
 }
 
 #products {
   color: white;
   background-color: #ff4814; /* Optional: add background for visibility */
   text-align: center;
-  font-size: 0.9em;
+  font-size: 2em;
   font-variant: small-caps;
   font-family: "Red Hat Display", sans-serif;
 
@@ -174,9 +262,9 @@ h3 {
   border-radius: 8em;
 
   position: absolute; /* Use absolute if placing over a section */
-  top: 1.5em;
+  top: 2em;
   right: 2em;
-
+  box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.151);
   z-index: 10; /* Make sure it stays on top */
 }
 
@@ -198,6 +286,11 @@ h3 {
   padding-top: 9px;
   background-color: #ff4814;
   text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.page2:hover {
+  background-color: #e63c0c;
 }
 
 .page2 h1 {
@@ -208,6 +301,11 @@ h3 {
   color: white;
   font-weight: bold;
   font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.page2:hover h1 {
+  transform: scale(1.05);
 }
 
 .nav-link {
@@ -216,26 +314,27 @@ h3 {
   margin-left: 30px;
   color: #ff4814;
   font-size: small;
-  transition: color 0.2s;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
+
 .nav-link:hover {
-  color: black;
+  color: white;
+  background-color: #ff4814;
+  transform: translateY(-3px);
 }
+
 #best {
   margin-left: 0;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1000px;
   margin: auto;
-}
-.product-card img {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 10px;
 }
 
 .product-card {
@@ -244,46 +343,85 @@ h3 {
   padding: 15px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .product-title {
   color: #e7544f;
   font-weight: bold;
   margin: 10px 0 5px;
+  transition: color 0.3s ease;
+}
+
+.product-card:hover .product-title {
+  color: #d13504;
 }
 
 .product-price {
   color: #e7544f;
   font-weight: bold;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-price {
+  transform: scale(1.1);
 }
 
 .product-desc {
   font-size: 0.9rem;
   background-color: #ff4814;
+  color: white;
   border-radius: 20px;
   border: none;
   width: 8em;
   height: 2em;
-  transition: background-color 0.2s, color 0.2s;
+  transition: all 0.3s ease;
   margin-top: 1em;
+  cursor: pointer;
 }
+
 .product-desc:hover {
   background-color: #ffe8e5;
   color: #ff4814;
-  box-shadow: inset 2px 2px 5px 1px rgb(83, 33, 33);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
 }
+
 .product-desc:active {
   color: #ffe8e5;
   background-color: #ff4814;
   box-shadow: inset 2px 2px 5px 1px rgb(83, 33, 33);
+  transform: translateY(1px);
 }
+
 .container {
   margin-top: 3em;
   display: flex;
   gap: 2rem;
   align-items: flex-start;
   flex-wrap: wrap;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
 }
 
 .product-image {
@@ -294,11 +432,26 @@ h3 {
 .product-image img {
   width: 80%;
   max-width: 400px;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.product-image img:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .product-details {
   flex: 2 1 400px;
   margin-top: 2em;
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.product-details:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .product-details h1 {
@@ -306,11 +459,21 @@ h3 {
   margin: 0;
   font-size: 2rem;
   font-family: "Red Hat Display", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.product-details:hover h1 {
+  color: #d13504;
 }
 
 .price {
   font-size: 1.5rem;
   margin: 0.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.product-details:hover .price {
+  transform: translateX(5px);
 }
 
 .subtext {
@@ -319,6 +482,11 @@ h3 {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   font-family: "Red Hat Display", sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+.product-details:hover .subtext {
+  opacity: 0.8;
 }
 
 .description {
@@ -329,17 +497,32 @@ h3 {
   line-height: 1.6;
   font-family: "Red Hat Display", sans-serif;
   white-space: normal;
+  transition: transform 0.3s ease;
+}
+
+.product-details:hover .description {
+  transform: translateX(5px);
 }
 
 .shade-list {
   margin-bottom: 1.5rem;
   font-family: "Red Hat Display", sans-serif;
   color: #ff4814;
+  transition: transform 0.3s ease;
+}
+
+.product-details:hover .shade-list {
+  transform: translateX(5px);
 }
 
 .shade-list b {
   color: #ff4814;
   font-family: "Red Hat Display", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.product-details:hover .shade-list b {
+  color: #d13504;
 }
 
 .shade-list ul {
@@ -352,6 +535,11 @@ h3 {
   margin-bottom: 0.3rem;
   font-family: "Red Hat Display", sans-serif;
   color: #ff4814;
+  transition: transform 0.3s ease;
+}
+
+.shade-list li:hover {
+  transform: translateX(10px);
 }
 
 .usage {
@@ -359,11 +547,21 @@ h3 {
   color: #ff4814;
   font-family: "Red Hat Display", sans-serif;
   line-height: 1.5em;
+  transition: transform 0.3s ease;
+}
+
+.product-details:hover .usage {
+  transform: translateX(5px);
 }
 
 .usage b {
   color: #ff4814;
   font-family: "Red Hat Display", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.product-details:hover .usage b {
+  color: #d13504;
 }
 
 #conclusion {
@@ -371,6 +569,7 @@ h3 {
   position: relative;
   top: 1em;
   background-color: white;
+  transition: all 0.5s ease;
 }
 
 #logo {
@@ -379,6 +578,10 @@ h3 {
   max-width: 350px;
   position: relative;
   left: 2em;
+  transition: all 0.5s ease;
+}
+#logo:hover {
+  transform: translateY(-5px);
 }
 
 #conclusion-text {
@@ -387,6 +590,13 @@ h3 {
   position: relative;
   left: 10em;
   top: -1em;
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#conclusion-text:hover {
+  transform: translateY(-5px);
 }
 
 #links {
@@ -394,22 +604,58 @@ h3 {
   position: relative;
   top: 1em;
   padding: 15px;
+  transition: background-color 0.5s ease;
 }
+
+#links:hover {
+  background-color: #e63c0c;
+}
+
 #sources {
   font-family: "Red Hat Display", sans-serif;
   color: white;
   font-size: 20px;
   line-height: 35px;
 }
+
 .source {
   color: white;
   font-family: "Red Hat Display", sans-serif;
   font-size: 20px;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.source:hover {
+  color: #ffe8e5;
+  opacity: 1;
+  text-decoration: none;
 }
 
 h4 {
-
-  font-weight:2px;
+  font-weight: 2px;
   font-family: "Red Hat Display", sans-serif;
   color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Add animations for section transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#about,
+#milestone,
+#traits,
+#motivation,
+#conclusion-text {
+  animation: fadeIn 1s ease-out;
 }
