@@ -229,9 +229,11 @@ a:hover {
   margin: 0;
   transition: background-color 0.3s ease;
 }
+
 #BestSeller:hover {
   background-color: #e63c0c;
 }
+
 h3 {
   position: relative;
   color: white;
@@ -240,8 +242,10 @@ h3 {
   display: inline-block;
   text-transform: uppercase;
   left: 1em;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, font-size 0.3s ease, text-shadow 0.3s ease;
+  will-change: transform, font-size, text-shadow;
 }
+
 #BestSeller:hover h3 {
   transform: translateY(-10px);
   font-size: 3em;
@@ -250,7 +254,7 @@ h3 {
 
 #products {
   color: white;
-  background-color: #ff4814; /* Optional: add background for visibility */
+  background-color: #ff4814;
   text-align: center;
   font-size: 1em;
   font-variant: small-caps;
@@ -258,29 +262,32 @@ h3 {
 
   width: 7em;
   height: 1.6em;
-  line-height: 1.6em; /* Center the text vertically */
+  line-height: 1.6em;
   border-radius: 8em;
 
-  position: absolute; /* Use absolute if placing over a section */
+  position: absolute;
   top: 1em;
   right: 1.5em;
   box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.151);
-  z-index: 10; /* Make sure it stays on top */
+  z-index: 10;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 #products:hover {
   color: black;
-  transition: 0.2s;
   background-color: #ffe8e5;
 }
+
 #products:active {
   color: #ffe8e5;
-
   background-color: black;
 }
+
 #products:focus {
   color: #ffe8e5;
 }
+
 
 .page2 {
   padding-top: 9px;
