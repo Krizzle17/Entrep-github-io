@@ -252,7 +252,7 @@ h3 {
   color: white;
   background-color: #ff4814; /* Optional: add background for visibility */
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   font-variant: small-caps;
   font-family: "Red Hat Display", sans-serif;
 
@@ -263,7 +263,7 @@ h3 {
 
   position: absolute; /* Use absolute if placing over a section */
   top: 1em;
-  right: 2em;
+  right: .5em;
   box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.151);
   z-index: 10; /* Make sure it stays on top */
 }
