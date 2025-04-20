@@ -243,12 +243,12 @@ h3 {
   text-transform: uppercase;
   left: 1em;
   transition: transform 0.3s ease, font-size 0.3s ease, text-shadow 0.3s ease;
-  will-change: transform, font-size, text-shadow;
+  will-change: transform, text-shadow;
 }
 
 #BestSeller:hover h3 {
-  transform: translateY(-10px);
-  font-size: 3em;
+  transform: translateY(-10px) scale(1.05);
+
   text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.452);
 }
 
