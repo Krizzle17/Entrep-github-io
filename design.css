@@ -263,7 +263,7 @@ h3 {
 
   position: absolute; /* Use absolute if placing over a section */
   top: 1em;
-  right: .5em;
+  right: 1.5em;
   box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.151);
   z-index: 10; /* Make sure it stays on top */
 }
